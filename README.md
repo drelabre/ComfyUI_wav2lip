@@ -57,6 +57,8 @@ To use the Wav2Lip node, you need to download the required models separately. Pl
 
 3. Adjust the node settings according to your requirements:
    - Set the `mode` to "sequential" or "repetitive" based on your video processing needs.
+     - In "sequential" mode the movie is stretched to fit the length of the sound file. Facial movements may be slow or fast.
+     - In "repetitive" mode, if the movie is shorter than the sound file, video is inserted repeatedly until the sound file ends.
    - Adjust the `face_detect_batch` size if needed.
 
 4. Execute the ComfyUI workflow to generate the lip-synced output video.
